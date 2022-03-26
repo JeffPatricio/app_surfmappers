@@ -18,6 +18,9 @@ export const en = {
   },
 
   pages: {
+    feed: {
+      add: 'Publish',
+    },
     profile: {
       language: 'Language',
       changeLanguage: 'Change application language',

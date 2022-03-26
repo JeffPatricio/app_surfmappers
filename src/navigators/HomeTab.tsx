@@ -9,6 +9,7 @@ import Home from '../assets/house.svg';
 import Map from '../assets/map.svg';
 import SearchIcon from '../assets/search.svg';
 import User from '../assets/user.svg';
+import Feed from '../pages/Feed';
 import Profile from '../pages/Profile';
 
 const Tab = createBottomTabNavigator();
@@ -50,11 +51,11 @@ const HomeTab = () => {
           },
           tabBarLabelPosition: 'below-icon',
         }}
-        initialRouteName="profile"
+        initialRouteName="feed"
       >
         <Tab.Screen
           name="feed"
-          component={GhostScreen}
+          component={Feed}
           options={{
             headerShown: false,
             tabBarLabel: t('tabTitles.feed'),

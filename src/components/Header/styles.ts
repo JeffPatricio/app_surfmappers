@@ -3,20 +3,35 @@ import { ms, mvs } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  height: ${Platform.OS === 'ios' ? mvs(40) : mvs(50)}px;
+  height: ${Platform.OS === 'ios' ? mvs(50) : mvs(60)}px;
   background-color: #ffffff;
   align-self: stretch;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding: 0 ${ms(10)}px;
+`;
+
+export const ContainerRow = styled.View`
+  flex-direction: row;
+  align-items: center;
 `;
 
 export const Title = styled.Text`
   font-size: ${ms(17)}px;
   color: #000000;
-  max-width: ${ms(200)}px;
   font-weight: bold;
-  margin-left: ${ms(5)}px;
 `;
 
-export const PressableIcon = styled.Pressable``;
+export const PressableIcon = styled.Pressable`
+  margin-right: ${ms(5)}px;
+`;
+
+export const PressableOptionIcon = styled.Pressable`
+  margin-right: ${ms(15)}px;
+`;
+
+export const Logo = styled.Image`
+  width: ${ms(140)}px;
+  height: ${mvs(40)}px;
+`;

@@ -24,7 +24,7 @@ const Profile = () => {
   return (
     <Container>
       <ContainerSafe>
-        <Header title={t('headerTitles.profile')} />
+        <Header title={t('headerTitles.profile')} backIconHidden />
         <ContainerBody>
           <Link onPress={navigateToChangeLanguage}>
             <View>

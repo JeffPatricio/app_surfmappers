@@ -18,6 +18,9 @@ export const ptBR = {
   },
 
   pages: {
+    feed: {
+      add: 'Adicionar',
+    },
     profile: {
       language: 'Idioma',
       changeLanguage: 'Altere o idioma do aplicativo',
