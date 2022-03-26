@@ -1,5 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React, { Fragment } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Platform, StatusBar } from 'react-native';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
 import { ms, mvs } from 'react-native-size-matters';
@@ -8,7 +9,7 @@ import Home from '../assets/house.svg';
 import Map from '../assets/map.svg';
 import SearchIcon from '../assets/search.svg';
 import User from '../assets/user.svg';
-import { translate } from '../locales';
+import Profile from '../pages/Profile';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,6 +18,8 @@ const GhostScreen = () => {
 };
 
 const HomeTab = () => {
+  const { t } = useTranslation();
+
   return (
     <Fragment>
       <StatusBar barStyle={'dark-content'} backgroundColor={'#ffffff'} />
@@ -31,7 +34,7 @@ const HomeTab = () => {
               ios: getBottomSpace() + mvs(50),
               android: mvs(55),
             }),
-            backgroundColor: '#EEE',
+            backgroundColor: '#f9f9f9',
             borderTopColor: '#DDD',
           },
           tabBarLabelStyle: {
@@ -47,14 +50,14 @@ const HomeTab = () => {
           },
           tabBarLabelPosition: 'below-icon',
         }}
-        initialRouteName="feed"
+        initialRouteName="profile"
       >
         <Tab.Screen
           name="feed"
           component={GhostScreen}
           options={{
             headerShown: false,
-            tabBarLabel: translate('feed'),
+            tabBarLabel: t('tabTitles.feed'),
             tabBarIcon: ({ color }) => (
               <Home height={mvs(24)} width={ms(24)} color={color} />
             ),
@@ -65,7 +68,7 @@ const HomeTab = () => {
           component={GhostScreen}
           options={{
             headerShown: false,
-            tabBarLabel: translate('explore'),
+            tabBarLabel: t('tabTitles.explore'),
             tabBarIcon: ({ color }) => (
               <SearchIcon height={mvs(24)} width={ms(24)} color={color} />
             ),
@@ -76,7 +79,7 @@ const HomeTab = () => {
           component={GhostScreen}
           options={{
             headerShown: false,
-            tabBarLabel: translate('checkIn'),
+            tabBarLabel: t('tabTitles.checkIn'),
             tabBarIcon: ({ color }) => (
               <Map height={mvs(24)} width={ms(24)} color={color} />
             ),
@@ -87,7 +90,7 @@ const HomeTab = () => {
           component={GhostScreen}
           options={{
             headerShown: false,
-            tabBarLabel: translate('notifications'),
+            tabBarLabel: t('tabTitles.notifications'),
             tabBarIcon: ({ color }) => (
               <Bell height={mvs(24)} width={ms(24)} color={color} />
             ),
@@ -95,10 +98,10 @@ const HomeTab = () => {
         />
         <Tab.Screen
           name="profile"
-          component={GhostScreen}
+          component={Profile}
           options={{
             headerShown: false,
-            tabBarLabel: translate('profile'),
+            tabBarLabel: t('tabTitles.profile'),
             tabBarIcon: ({ color }) => (
               <User height={mvs(24)} width={ms(24)} color={color} />
             ),

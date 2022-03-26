@@ -1,5 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React, { Fragment } from 'react';
+import ChangeLanguage from '../pages/ChangeLanguage';
 import HomeTab from './HomeTab';
 
 const Stack = createNativeStackNavigator();
@@ -14,6 +15,11 @@ const MainStack = () => {
       screenOptions={{ headerShown: false }}
       initialRouteName="homeTab"
     >
+      <Stack.Screen
+        name="changeLanguage"
+        key="changeLanguage"
+        component={ChangeLanguage}
+      />
       <Stack.Screen name="homeTab" key="homeTab" component={HomeTab} />
       <Stack.Screen
         name="sessionDetails"
