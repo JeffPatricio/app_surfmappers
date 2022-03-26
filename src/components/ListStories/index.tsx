@@ -20,8 +20,6 @@ for (let index = 1; index < 20; index++) {
   });
 }
 
-console.log(DATA);
-
 const renderItem = ({ item }: { item: Storie }) => {
   return <RenderItem item={item} />;
 };

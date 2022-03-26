@@ -7,6 +7,7 @@ export const ptBR = {
   headerTitles: {
     profile: 'Perfil',
     changeLanguage: 'Alterar idioma',
+    album: 'Álbum',
   },
 
   tabTitles: {

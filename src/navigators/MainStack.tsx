@@ -1,5 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React, { Fragment } from 'react';
+import Album from '../pages/Album';
 import ChangeLanguage from '../pages/ChangeLanguage';
 import HomeTab from './HomeTab';
 
@@ -13,8 +14,9 @@ const MainStack = () => {
   return (
     <Stack.Navigator
       screenOptions={{ headerShown: false }}
-      initialRouteName="homeTab"
+      initialRouteName="album"
     >
+      <Stack.Screen name="album" key="album" component={Album} />
       <Stack.Screen
         name="changeLanguage"
         key="changeLanguage"

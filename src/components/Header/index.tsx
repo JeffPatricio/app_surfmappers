@@ -1,9 +1,9 @@
 import React from 'react';
-import { Alert } from 'react-native';
 import { ms, mvs } from 'react-native-size-matters';
 import Caret from '../../assets/caret-left.svg';
 import Cart from '../../assets/cart.svg';
 import Chat from '../../assets/chat.svg';
+import Dots from '../../assets/dots.svg';
 import { goBack } from '../../navigators/navigationRef';
 import {
   Container,
@@ -20,6 +20,7 @@ interface HeaderProps {
   showLogo?: boolean;
   showCartIcon?: boolean;
   showChatIcon?: boolean;
+  showDotsIcon?: boolean;
 }
 
 const Header = ({
@@ -28,6 +29,7 @@ const Header = ({
   showLogo = false,
   showCartIcon = false,
   showChatIcon = false,
+  showDotsIcon = false,
 }: HeaderProps) => {
   return (
     <Container>
@@ -49,20 +51,19 @@ const Header = ({
       </ContainerRow>
       <ContainerRow>
         {!!showCartIcon && (
-          <PressableOptionIcon
-            hitSlop={30}
-            onPress={() => Alert.alert('Opa', 'Você cllicou')}
-          >
+          <PressableOptionIcon hitSlop={30}>
             <Cart height={mvs(25)} width={ms(25)} color="#212121" />
           </PressableOptionIcon>
         )}
 
         {!!showChatIcon && (
-          <PressableOptionIcon
-            hitSlop={30}
-            onPress={() => Alert.alert('Opa', 'Você cllicou')}
-          >
+          <PressableOptionIcon hitSlop={30}>
             <Chat height={mvs(25)} width={ms(25)} color="#212121" />
+          </PressableOptionIcon>
+        )}
+        {!!showDotsIcon && (
+          <PressableOptionIcon hitSlop={30} style={{ marginRight: 0 }}>
+            <Dots height={mvs(25)} width={ms(25)} color="#212121" />
           </PressableOptionIcon>
         )}
       </ContainerRow>

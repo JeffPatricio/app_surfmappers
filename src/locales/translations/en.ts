@@ -7,6 +7,7 @@ export const en = {
   headerTitles: {
     profile: 'Profile',
     changeLanguage: 'Change language',
+    album: 'Album',
   },
 
   tabTitles: {
@@ -21,6 +22,7 @@ export const en = {
     feed: {
       add: 'Publish',
     },
+
     profile: {
       language: 'Language',
       changeLanguage: 'Change application language',
