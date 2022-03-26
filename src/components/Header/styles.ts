@@ -9,7 +9,7 @@ export const Container = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 ${ms(10)}px;
+  padding: 0 ${ms(15)}px;
 `;
 
 export const ContainerRow = styled.View`
@@ -28,7 +28,7 @@ export const PressableIcon = styled.Pressable`
 `;
 
 export const PressableOptionIcon = styled.Pressable`
-  margin-right: ${ms(15)}px;
+  margin-left: ${ms(15)}px;
 `;
 
 export const Logo = styled.Image`

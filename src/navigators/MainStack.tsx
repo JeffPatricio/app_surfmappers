@@ -14,7 +14,7 @@ const MainStack = () => {
   return (
     <Stack.Navigator
       screenOptions={{ headerShown: false }}
-      initialRouteName="album"
+      initialRouteName="homeTab"
     >
       <Stack.Screen name="album" key="album" component={Album} />
       <Stack.Screen

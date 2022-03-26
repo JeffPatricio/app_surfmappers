@@ -10,6 +10,7 @@ export const Image = styled.Image`
   width: ${ms(55)}px;
   height: ${ms(55)}px;
   border-radius: ${ms(28)}px;
+  background-color: #fff;
 `;
 
 export const Name = styled.Text`

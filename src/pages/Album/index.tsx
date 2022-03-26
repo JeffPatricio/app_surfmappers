@@ -16,7 +16,7 @@ const DATA: AlbumItem[] = [];
 for (let index = 1; index < 50; index++) {
   DATA.push({
     id: index,
-    imageUrl: 'https://picsum.photos/200/200',
+    imageUrl: `https://picsum.photos/${200 + index}/${200 + index}`,
   });
 }
 

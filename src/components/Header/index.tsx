@@ -15,7 +15,7 @@ import {
 } from './styles';
 
 interface HeaderProps {
-  title: string;
+  title?: string;
   backIconHidden?: boolean;
   showLogo?: boolean;
   showCartIcon?: boolean;
@@ -61,6 +61,7 @@ const Header = ({
             <Chat height={mvs(25)} width={ms(25)} color="#212121" />
           </PressableOptionIcon>
         )}
+
         {!!showDotsIcon && (
           <PressableOptionIcon hitSlop={30} style={{ marginRight: 0 }}>
             <Dots height={mvs(25)} width={ms(25)} color="#212121" />

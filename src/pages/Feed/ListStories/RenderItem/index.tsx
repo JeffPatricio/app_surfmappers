@@ -14,16 +14,10 @@ const RenderItem = ({ item }: Props) => {
     <Container>
       <TouchableOpacity activeOpacity={0.5}>
         <LinearGradient
-          colors={[
-            '#00FFFF',
-            '#17C8FF',
-            '#329BFF',
-            '#4C64FF',
-            '#6536FF',
-            '#8000FF',
-          ]}
-          start={{ x: 0.0, y: 1.0 }}
+          colors={['#00FFFF', '#17C8FF', '#329BFF', '#4C64FF']}
+          start={{ x: 0.0, y: 0.0 }}
           end={{ x: 1.0, y: 1.0 }}
+          angle={10}
           style={styles.gradient}
         >
           <Image source={{ uri: item.imageUrl }} resizeMode="cover" />
