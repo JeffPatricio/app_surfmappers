@@ -19,3 +19,7 @@ npm run android
 ```
 npm run ios
 ```
+
+## Change app language
+
+To change the language of the app, go to Profile > Language
