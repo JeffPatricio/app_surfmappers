@@ -30,6 +30,19 @@ export const PressableIcon = styled.Pressable`
 
 export const PressableOptionIcon = styled.Pressable`
   margin-left: ${ms(15)}px;
+  position: relative;
+`;
+
+export const Badge = styled.View`
+  position: absolute;
+  width: ${ms(12)}px;
+  height: ${ms(12)}px;
+  border-radius: ${ms(6)}px;
+  right: -2px;
+  top: 0px;
+  border: 2px solid #fff;
+  background-color: #f00;
+  z-index: 2;
 `;
 
 export const Logo = styled.Image`

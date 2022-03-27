@@ -6,6 +6,7 @@ import Chat from '../../assets/chat.svg';
 import Dots from '../../assets/dots.svg';
 import { goBack } from '../../navigators/navigationRef';
 import {
+  Badge,
   Container,
   ContainerRow,
   Logo,
@@ -52,7 +53,8 @@ const Header = ({
       <ContainerRow>
         {!!showCartIcon && (
           <PressableOptionIcon hitSlop={30}>
-            <Cart height={mvs(25)} width={ms(25)} color="#212121" />
+            <Badge />
+            <Cart height={mvs(25)} width={ms(25)} color="#f00" />
           </PressableOptionIcon>
         )}
 

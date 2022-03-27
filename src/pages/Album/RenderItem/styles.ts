@@ -23,8 +23,8 @@ export const ContainerIcon = styled.View`
   right: ${ms(5)}px;
   background-color: #2587fe;
   border-radius: ${ms(5)}px;
-  width: ${ms(26)}px;
-  height: ${ms(26)}px;
+  width: ${ms(22)}px;
+  height: ${ms(22)}px;
   align-items: center;
   justify-content: center;
 `;

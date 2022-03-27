@@ -1,10 +1,24 @@
 import React from 'react';
-import { View } from 'react-native';
+import { TouchableOpacity, View } from 'react-native';
 import { ms, mvs } from 'react-native-size-matters';
 import { AlbumItem } from '..';
+import Camera from '../../../assets/camera_outline.svg';
 import Dots from '../../../assets/dots.svg';
+import Heart from '../../../assets/heart.svg';
+import Share from '../../../assets/share.svg';
 import { navigate } from '../../../navigators/navigationRef';
-import { Container, ContainerRow, Description, Image, Title } from './styles';
+import {
+  Container,
+  ContainerDots,
+  ContainerRow,
+  Description,
+  Dot,
+  Image,
+  PressableCameraIcon,
+  PressableOptionIcon,
+  Title,
+  UserName,
+} from './styles';
 
 interface Props {
   item: AlbumItem;
@@ -16,7 +30,7 @@ const RenderItem = ({ item }: Props) => {
   };
 
   return (
-    <Container activeOpacity={0.5} onPress={navigateToAlbum}>
+    <Container>
       <ContainerRow>
         <View>
           <Title numberOfLines={1}>
@@ -28,7 +42,34 @@ const RenderItem = ({ item }: Props) => {
         </View>
         <Dots height={mvs(22)} width={ms(22)} color="#212121" />
       </ContainerRow>
-      <Image resizeMode="cover" source={{ uri: item.imageUrl }} />
+      <TouchableOpacity activeOpacity={0.5} onPress={navigateToAlbum}>
+        <Image resizeMode="cover" source={{ uri: item.imageUrl }} />
+      </TouchableOpacity>
+      <ContainerRow>
+        <ContainerRow>
+          <PressableOptionIcon>
+            <Heart height={mvs(20)} width={ms(20)} color="#212121" />
+          </PressableOptionIcon>
+          <PressableOptionIcon>
+            <Share height={mvs(25)} width={ms(25)} color="#212121" />
+          </PressableOptionIcon>
+        </ContainerRow>
+        <ContainerDots>
+          <Dot />
+          <Dot />
+          <Dot />
+          <Dot active />
+          <Dot />
+          <Dot />
+          <Dot />
+        </ContainerDots>
+        <ContainerRow>
+          <PressableCameraIcon>
+            <Camera height={mvs(23)} width={ms(23)} color="#212121" />
+          </PressableCameraIcon>
+          <UserName numberOfLines={1}>yurygargarin</UserName>
+        </ContainerRow>
+      </ContainerRow>
     </Container>
   );
 };

@@ -34,7 +34,7 @@ const RenderHeader = () => {
           <Description>Hoje, Sábado 17 de abril 2021 • 07h às 10h</Description>
         </View>
         <ButtonShare>
-          <Share height={mvs(15)} width={ms(15)} color={'#666'} />
+          <Share height={mvs(20)} width={ms(20)} color={'#666'} />
         </ButtonShare>
       </ContainerTitleRow>
       <ContainerTitleRow>

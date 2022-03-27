@@ -37,8 +37,8 @@ export const Title = styled.Text`
 `;
 
 export const ButtonShare = styled.TouchableOpacity`
-  width: ${ms(28)}px;
-  height: ${ms(28)}px;
+  width: ${ms(30)}px;
+  height: ${ms(30)}px;
   border-radius: ${ms(6)}px;
   border: 1px solid #2587fe;
   margin-top: ${mvs(2)}px;

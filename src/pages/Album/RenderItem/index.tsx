@@ -19,7 +19,7 @@ const RenderItem = ({ item }: Props) => {
       {/* load only in some components */}
       {item.imagesCount % 2 === 0 && (
         <ContainerIcon>
-          <Images height={mvs(16)} width={ms(16)} color={'#fff'} />
+          <Images height={mvs(14)} width={ms(14)} color={'#fff'} />
         </ContainerIcon>
       )}
     </Container>
