@@ -65,7 +65,7 @@ const Header = ({
         )}
 
         {!!showDotsIcon && (
-          <PressableOptionIcon hitSlop={30} style={{ marginRight: 0 }}>
+          <PressableOptionIcon hitSlop={30}>
             <Dots height={mvs(23)} width={ms(23)} color="#212121" />
           </PressableOptionIcon>
         )}

@@ -1,13 +1,23 @@
 import { ms, mvs } from 'react-native-size-matters';
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 
 export const Container = styled.View`
   padding: ${mvs(15)}px ${ms(15)}px;
 `;
 
-export const Title = styled.Text`
+interface TitleProps {
+  fontWeight700?: boolean;
+}
+
+export const Title = styled.Text<TitleProps>`
   font-size: ${ms(22)}px;
   color: #000000;
+
+  ${(props) =>
+    props.fontWeight700 &&
+    css`
+      font-weight: 700;
+    `}
 `;
 
 export const ContainerInput = styled.View`

@@ -7,7 +7,7 @@ const RenderHeader = () => {
   return (
     <Container>
       <Title>
-        Onde você <Title style={{ fontWeight: '700' }}>surfou hoje</Title>?
+        Onde você <Title fontWeight700>surfou hoje</Title>?
       </Title>
       <ContainerInput>
         <SearchIcon height={mvs(18)} width={ms(18)} color={'#666'} />
