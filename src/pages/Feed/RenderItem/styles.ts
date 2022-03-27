@@ -27,7 +27,7 @@ export const Title = styled.Text`
   font-size: ${ms(16)}px;
   color: #2587fe;
   font-weight: bold;
-  max-width: ${ms(280)}px;
+  max-width: ${ms(300)}px;
 `;
 
 export const Description = styled.Text`

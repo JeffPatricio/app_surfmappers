@@ -17,7 +17,7 @@ export const Image = styled.Image`
 
 export const Name = styled.Text`
   font-size: ${ms(12)}px;
-  max-width: ${ms(50)}px;
+  max-width: ${ms(60)}px;
   color: #212121;
   margin-top: ${mvs(5)}px;
 `;
