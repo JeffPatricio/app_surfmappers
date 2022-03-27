@@ -97,7 +97,7 @@ export const ButtonChat = styled.TouchableOpacity`
 export const ButtonFollowing = styled.TouchableOpacity`
   border-radius: ${ms(6)}px;
   height: ${ms(28)}px;
-  padding: ${mvs(5)}px ${ms(8)}px;
+  padding: ${mvs(5)}px ${ms(10)}px;
   background: #2587fe;
   margin-top: ${mvs(2)}px;
   align-items: center;

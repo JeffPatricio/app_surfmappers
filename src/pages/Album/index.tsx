@@ -9,6 +9,7 @@ import { Container, ContainerSafe } from './styles';
 export interface AlbumItem {
   id: number;
   imageUrl: string;
+  imagesCount: number;
 }
 
 const DATA: AlbumItem[] = [];
@@ -17,6 +18,7 @@ for (let index = 1; index < 50; index++) {
   DATA.push({
     id: index,
     imageUrl: `https://picsum.photos/${200 + index}/${200 + index}`,
+    imagesCount: index,
   });
 }
 

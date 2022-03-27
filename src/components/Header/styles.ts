@@ -21,10 +21,11 @@ export const Title = styled.Text`
   font-size: ${ms(17)}px;
   color: #000000;
   font-weight: bold;
+  margin-left: ${ms(5)}px;
 `;
 
 export const PressableIcon = styled.Pressable`
-  margin-right: ${ms(5)}px;
+  margin-left: -${ms(5)}px;
 `;
 
 export const PressableOptionIcon = styled.Pressable`

@@ -64,7 +64,7 @@ const Header = ({
 
         {!!showDotsIcon && (
           <PressableOptionIcon hitSlop={30} style={{ marginRight: 0 }}>
-            <Dots height={mvs(25)} width={ms(25)} color="#212121" />
+            <Dots height={mvs(23)} width={ms(23)} color="#212121" />
           </PressableOptionIcon>
         )}
       </ContainerRow>

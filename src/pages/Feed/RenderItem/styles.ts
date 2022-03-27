@@ -11,6 +11,7 @@ export const ContainerRow = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-self: stretch;
+  align-items: center;
 `;
 
 export const Image = styled.Image`
@@ -31,4 +32,5 @@ export const Description = styled.Text`
   color: #666666;
   margin-top: ${mvs(2)}px;
   margin-bottom: ${mvs(8)}px;
+  font-weight: bold;
 `;

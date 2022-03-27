@@ -26,6 +26,6 @@ export const Input = styled.TextInput`
   color: #000000;
   height: ${mvs(45)}px;
   align-self: stretch;
-  padding: 0 ${ms(15)}px;
+  padding: 0 ${ms(10)}px;
   flex: 1;
 `;

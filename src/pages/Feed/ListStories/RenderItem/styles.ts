@@ -3,14 +3,15 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   align-items: center;
-  margin-right: ${ms(15)}px;
+  margin-right: ${ms(10)}px;
 `;
 
 export const Image = styled.Image`
-  width: ${ms(55)}px;
-  height: ${ms(55)}px;
-  border-radius: ${ms(28)}px;
+  width: ${ms(57)}px;
+  height: ${ms(57)}px;
+  border-radius: ${ms(29)}px;
   background-color: #fff;
+  border: 1px solid #fff;
 `;
 
 export const Name = styled.Text`

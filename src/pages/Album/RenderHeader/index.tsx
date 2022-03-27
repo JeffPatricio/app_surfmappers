@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import { ms, mvs } from 'react-native-size-matters';
 import Camera from '../../../assets/camera_outline.svg';
 import CaretDown from '../../../assets/caret_down.svg';
-import Chat from '../../../assets/chat.svg';
+import Chat from '../../../assets/chat_fill.svg';
 import Funnel from '../../../assets/funnel.svg';
 import Share from '../../../assets/share.svg';
 import {

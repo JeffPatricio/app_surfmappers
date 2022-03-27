@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   align-items: center;
-  margin-right: ${ms(15)}px;
+  margin-right: ${ms(10)}px;
   margin-left: ${ms(15)}px;
 `;
 

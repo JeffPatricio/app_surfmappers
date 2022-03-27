@@ -26,7 +26,7 @@ const RenderItem = ({ item }: Props) => {
             Sábado 17 de abril 2021 • 07h às 10h
           </Description>
         </View>
-        <Dots height={mvs(25)} width={ms(25)} color="#212121" />
+        <Dots height={mvs(22)} width={ms(22)} color="#212121" />
       </ContainerRow>
       <Image resizeMode="cover" source={{ uri: item.imageUrl }} />
     </Container>
